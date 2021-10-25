@@ -3,8 +3,8 @@ import os,sys
 
 file_dir = os.path.dirname(os.path.abspath(__file__))
 
-config_path = "${HOME}/.xmail"
-config_file = "${HOME}/.xmail/config.py"
+config_path = os.environ['HOME']+"/.xmail"
+config_file = os.environ['HOME']+"/.xmail/config.py"
 default_file = file_dir+'/default_config.py'
 
 
